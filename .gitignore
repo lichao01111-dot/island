@@ -1,0 +1,21 @@
+# 依赖
+node_modules/
+
+# 构建产物(由 build.mjs / --dev 重新生成)
+web/main.js
+
+# 运行时数据(短链/存档,server.mjs 会自动重建)
+data/
+
+# macOS
+.DS_Store
+
+# agent / IDE 工作目录(截图、报告、本地设置)
+.gstack/
+.claude/
+
+# 开发截图
+tools/screenshots/
+
+# 原始资产源包(游戏只加载 web/assets 下的 .glb,这个源包不需要进仓库)
+web/assets/KayKit_Forest_Nature_Pack_1.0_FREE/

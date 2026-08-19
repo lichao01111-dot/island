@@ -1,0 +1,21 @@
+{
+  "name": "island",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node server.mjs --dev",
+    "start": "node server.mjs",
+    "dev:static": "node build.mjs --serve",
+    "test": "node test/save.mjs && node test/boars.mjs && node test/flotsam.mjs && node test/expeditions.mjs && node test/visit.mjs && node test/server.mjs && node test/assets.mjs && node test/residents.mjs && node test/beasts.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.169.0",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0"
+  }
+}

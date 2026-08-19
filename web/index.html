@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>小岛生存 · 卡通</title>
+  <style>
+    html, body { margin: 0; padding: 0; overflow: hidden; background: #7ec8e3; overscroll-behavior: none; }
+    canvas { display: block; touch-action: none; }
+    /* 触屏:去掉点按灰色高亮;manipulation 保留滚动/单指平移,只禁掉双击缩放 */
+    *, *::before, *::after { -webkit-tap-highlight-color: transparent; }
+    body { touch-action: manipulation; }
+    /* 顶光与暗角已经并进了后期处理着色器(src/game/postfx.ts)。
+       放在色调映射之前更正确,也避免和着色器里的暗角叠成两层。 */
+  </style>
+</head>
+<body>
+  <script src="main.js"></script>
+</body>
+</html>
